@@ -10,11 +10,27 @@ submitted to : Finite Elements in Analysis and Design journal.
 
 
 
-# Content
+# Content of the directories
+
+## Main directory
+
+* ANN-Learning.ipynb : Jupyter notebook main training program. This one build and train the ANN.
+
+* PythonToFortran-3layers.ipynb : Jupyter notebook converter to write the VUHARD from the ANN parameters. This one generates the FORTRAN subroutines for Abaqus Explicit.
+
+## ANN-JohnsonCook
+
+This directory contains the following files:
+
+* Datatest.npz : numpy datafile containing the testing data without derivatives
+* DatatestWithDerivatives.npz : numpy datafile containing the testing data with derivatives
+* JC-Experiments : excel file containing training data for the ANN
+
+that can be used to create new ANN.
 
 ## VUHARD
 
-Contents the following files:
+Contents the following FORTRAN files which are pre-trained ANN ready to use:
 
 - VUHARD-ANN-3-15-7-1-sigmoid.f : ANN 3-15-7-1 as proposed in the paper
 - VUHARD-ANN-3-7-4-1-sigmoid.f  : ANN 3-15-7-1 as proposed in the paper
